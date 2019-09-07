@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./font/HelveticaNeueBoldCondensed.eot');
+  src: local('Helvetica Neue Condensed Bold'), local('HelveticaNeueBoldCondensed'),
+  url('./font/HelveticaNeueBoldCondensed.eot?#iefix') format('embedded-opentype'),
+  url('./font/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+  url('./font/HelveticaNeueBoldCondensed.woff') format('woff'),
+  url('./font/HelveticaNeueBoldCondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./font/HelveticaNeueBlackCondensed.eot');
+  src: local('Helvetica Neue Condensed Black'), local('HelveticaNeueBlackCondensed'),
+  url('./font/HelveticaNeueBlackCondensed.eot?#iefix') format('embedded-opentype'),
+  url('./font/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+  url('./font/HelveticaNeueBlackCondensed.woff') format('woff'),
+  url('./font/HelveticaNeueBlackCondensed.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('./font/HelveticaNeueCyr-Thin.eot');
+  src: local('HelveticaNeueCyr-Thin'),
+  url('./font/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+  url('./font/HelveticaNeueCyr-Thin.woff2') format('woff2'),
+  url('./font/HelveticaNeueCyr-Thin.woff') format('woff'),
+  url('./font/HelveticaNeueCyr-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+

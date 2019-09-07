@@ -1,0 +1,269 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "HelveticaNeueCyr", sans-serif;
+}
+header{
+  margin: auto;
+  margin-bottom: 40px;
+}
+.header{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.header-content>*{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  padding-right: 100px;
+  display: block;
+}
+.title{
+  margin-bottom: 20px;
+  height: 50px;
+}
+h1{
+  font-size: 35pt;
+  font-weight: normal;
+  margin-right: 20px;
+}
+.start-on{
+  border: 2px solid #599fe0;
+  color: #599fe0;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 26px;
+  box-sizing: border-box;
+  height: 30px;
+  font-size: 13pt;
+}
+.start-date{
+  display: inline-block;
+}
+nav{
+  margin-bottom: 20px;
+}
+.list-info{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.list-info>li{
+  margin-right: 30px;
+  cursor: pointer;
+}
+.count{
+  display: inline-block;
+  font-weight: bold;
+}
+.date>form{
+  display: flex;
+  text-align: center;
+}
+.date>form>span{
+  margin-right: 10px;
+  line-height: 30px;
+}
+.input-date{
+  height: 29px;
+  margin-right: -4px;
+  box-sizing: border-box;
+}
+.calendar{
+  height: 29px;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+.delete{
+  height: 29px;
+  margin-right: -1px;
+  box-sizing: border-box;
+}
+.delete,.calendar{
+  width: 30px;
+
+}
+
+.main-content{
+  width: 100%;
+  background-color: #eeeeee;
+  padding-top: 50px;
+
+}
+.list-content{
+  display: grid;
+  grid-template-rows: 295px 295px 295px;
+  grid-template-columns: 295px 295px 295px;
+  grid-gap: 2vw;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 0;
+}
+
+.item{
+  display: block;
+  width: 295px;
+  height: 295px;
+  position: relative;
+}
+.blackout{
+  display: block;
+  position: absolute;
+  width: 295px;
+  height: 295px;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+}
+.post-info {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: calc(50% - 20px);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: 40px;
+}
+.info{
+  width: 90%;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1.7fr 1fr 1fr;
+  justify-items: start;
+  justify-content: center;
+  gap: 2px;
+}
+.info *{
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.info>span{
+  flex: 0 0 50%;
+}
+.today-comments,.all-time-comments,.all-time-likes,.today-likes{
+  flex: 0 0 25%;
+}
+.count-like-today,.count-like-all-time,.count-comments-today,.count-comments-all-time{
+  margin-left: 5px;
+}
+.image-upload{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  bottom: 10px;
+  color: white;
+}
+.load-more{
+  display: block;
+  width: 130px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 60px;
+  margin-top: 44px;
+  box-sizing: border-box;
+
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.5s;
+}
+.load-more:hover{
+  background-color: black;
+  color: white;
+}
+#load-more{
+  background: #eeeeee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:960px){
+  .header{
+    align-items: start;
+
+  }
+  .list-content{
+    display: grid;
+    grid-template-columns: 295px 295px;
+    grid-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+
+  }
+  .logo img{
+    width: 130px;
+  }
+  .logo {
+    width: 100px;
+
+  }
+  h1{
+    font-size: 20pt;
+    font-weight: normal;
+    margin-right: 20px;
+  }
+  .start-on{
+    line-height: 20px;
+    box-sizing: border-box;
+    height: 20px;
+    font-size: 10pt;
+  }
+
+
+
+}
+@media (max-width: 700px) {
+  .date>form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .date>form>span{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .list-content{
+    display: grid;
+    grid-template-columns: 295px;
+    grid-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  h1{
+    margin: 0;
+  }
+}
+
