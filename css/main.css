@@ -265,5 +265,8 @@ nav{
   h1{
     margin: 0;
   }
+  .logo{
+    padding-right:40px;
+  }
 }
 
